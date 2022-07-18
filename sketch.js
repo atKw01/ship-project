@@ -19,6 +19,9 @@ function setup(){
 
 function draw() {
   background("white");
+  if (sea.x < 0) {
+    sea.x = sea.width/2;
+  }
   drawSprites();
 
 }
